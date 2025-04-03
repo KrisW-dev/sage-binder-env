@@ -1,43 +1,12 @@
-A Binder repo for SageMath computing environment
-================================================
+Environment de calcul SageMath pour Math402
+===========================================
 
-This repository is a Binder repo based on `SageMath <http://sagemath.org>`_. To
-access a computing environment created by `Binder <http://mybinder.org>`_ using
-SageMath kernel, click on this badge
+Il faut juste faire un click sur ce badge
 
 .. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/sagemath/sage-binder-env/master
+ :target: https://mybinder.org/v2/gh/KrisW-dev/sage-binder-env/master
 
-
-An example Binder repo for SageMath
------------------------------------
-
-Have a repository full of Jupyter notebooks using SageMath? It's easy to set up
-Binder to let anyone run them. Just fork this repo, put your notebooks in the
-`notebooks` directory, and modify this `README.rst` to your needs. In
-particular, you probably want to modify this line::
-
-    :target: https://mybinder.org/v2/gh/...
-
-with `...` filled with the name of your forked repo. This makes the Binder badge use your
-repo to create the computing environment.
-
-
-Extending the Dockerfile
-------------------------
-
-The `Dockerfile` is based on the Docker image::
-
-    FROM ghcr.io/sagemath/sage-binder-env:10.6
-
-which contains the latest stable version of Sage.
-
-It includes Sage itself, and all the software packages typically
-included in a standard Sage installation, though not *everything*. In
-particular not optional Sage SPKGs, or other system software packages.
-
-
-Authors
--------
-
-Nicolas M. Thiéry, E. Madison Bray, and Kwankyu Lee
+pour lancer un serveur de notebooks Jupyter avec un kernel Sage 10.6 en plus de Python. C'est un environemnt "Binder", il vous faut patienter un 
+peu pour l'initialisation. Attention: contrairement à CoCalc l'environment n'est pas "persistant", c'est à dire si vous fermez la fenêtre (ou l'onglet!) 
+vous perdez tout. Il faut donc penser à faire un download régulièreemnt et en particulier quand vous arrêtez de travailler. Par contre Binder est un projet open-source communautaire, pas de frais ou restrictions
+commerciales.
